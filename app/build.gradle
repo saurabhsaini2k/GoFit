@@ -28,4 +28,7 @@ dependencies {
     compile 'com.android.support:design:23.4.0'
     testCompile 'junit:junit:4.12'
     compile 'com.mcxiaoke.volley:library:1.0.19'
+    compile 'com.google.android.gms:play-services:9.6.1'
+    compile 'com.google.android.gms:play-services-fitness:9.6.1'
+    compile 'com.google.android.gms:play-services-wearable:9.6.1'
 }
