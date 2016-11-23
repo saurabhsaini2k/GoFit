@@ -63,13 +63,21 @@ public class DetectedActivitiesAdapter extends ArrayAdapter<DetectedActivity> {
         // activity was freshly detected, we use its confidence level. Otherwise, we set the
         // confidence level to zero.
         ArrayList<DetectedActivity> tempList = new ArrayList<DetectedActivity>();
+
+        int max = -1,idx;
+
         for (int i = 0; i < Constants.MONITORED_ACTIVITIES.length; i++) {
+
             int confidence = detectedActivitiesMap.containsKey(Constants.MONITORED_ACTIVITIES[i]) ?
                     detectedActivitiesMap.get(Constants.MONITORED_ACTIVITIES[i]) : 0;
+
+
 
             tempList.add(new DetectedActivity(Constants.MONITORED_ACTIVITIES[i],
                     confidence));
         }
+
+
 
         // Remove all items.
         this.clear();

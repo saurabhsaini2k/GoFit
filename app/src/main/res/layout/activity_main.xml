@@ -62,11 +62,25 @@
     <ListView
         android:id="@+id/detected_activities_listview"
         android:layout_width="match_parent"
-        android:layout_height="314dp" />
+        android:layout_height="212dp" />
 
     <Button
         android:text="Logout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/btnlogout" />
+
+    <TextView
+        android:text="Activity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView2"
+        android:textSize="25dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView3"
+        android:textSize="25dp" />
+
 </LinearLayout>
